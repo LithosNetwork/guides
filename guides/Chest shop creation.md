@@ -1,6 +1,6 @@
 # How to create a chest shop to sell items?
 
-1. First, you have to (partially) own a company. To create a company, use '/create-company name'. Read through the contract and attach your signature on the last page of the contract.
+1. First, you have to (partially) own a company. To create a company, use '/create-company', and click the link. Read through the contract and attach a fictional signature on the page.
 2. Place down a chest or barrel and put the item you want to sell into that container.
 3. Place a sign around it (above, attached to, next to, or below the container), with this on the sign:
    - line 1: leave empty (however, if you own multiple companies, you can put the company name here)
