@@ -12,4 +12,12 @@ If you want to buy items from players, you have to prefix the number on line 3 w
 
 *Note that creating a shop has a 5¢ fee per chest! And if you own more than 20 chest shops, your sales will be taxed. More about that at survival.rocks/economy. Make sure you plan your shops well in advance!*
 
+#### Picture: How to create a chest shop?
+
 ![image](https://user-images.githubusercontent.com/8517465/157056052-bca19472-1e41-4dc2-8324-9033e5cff9f4.png)
+
+#### Picture: How to change item frame placement?
+- Use the command `/company <name> item-frames <placement>`, and use one of the placement arguments from the picture below.
+
+![item frame placement chest shops](https://user-images.githubusercontent.com/8517465/157319368-5099a694-6fc4-4bc5-b062-a76cafc2d0bd.png)
+
