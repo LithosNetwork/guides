@@ -4,6 +4,7 @@
 - Receive a basic income of 200¢ per day when logging into the server (100¢ for the first day)
 - Kill mobs in different places for a 90% chance to get 3¢ to 8¢ per kill
 - Complete advancements for 100¢ each
+- Post a screenshot in the #screenshots Discord channel daily for 50¢
 - Like the server on NameMC for a 1,000¢ reward
 - Vote for the server on sites for a 50¢ reward per vote, use `/vote`
 - Get promoted to Settler or Citizen for a 500¢ reward
