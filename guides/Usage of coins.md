@@ -19,11 +19,12 @@
 - Withdraw coins from your company balance with `/company <name> withdraw <amount>`
 
 # Ways to spend coins
+- Buy items from chest shops. Find items with `/find <item name>`
 - Use `/pay <player> <amount>` to transfer coins to another player
 - Set a warp for other players to visit, the first warp costs 2,000¢
 - Withdraw coins from your balance to physical coins with `/withdraw <worth>`
 - Deposit coins to your company with `/company <name> deposit <amount>`
-  - And buy items from players with chest shops
+  - And buy items from players through your created chest shops
 - Repair items for a small fee with `/repair`
 - Teleport to warps that have a fee set
 - Teleport to your last death location for 100¢ with `/death`
