@@ -10,7 +10,7 @@
 
 If you want to buy items from players, you have to prefix the number on line 3 with an 'S'. You will then also need to deposit coins into your company by doing `/company <name> deposit <coins>`. These coins will then be used to pay for the items people sell to your shop. When the company's balance runs out, others will be unable to sell to your company.
 
-*Note that creating a shop has a 5¢ fee per chest! And if you own more than 20 chest shops, your sales will be taxed. More about that at survival.rocks/economy. Make sure you plan your shops well in advance!*
+*Note that if you own more than 20 chest shops, your sales will be taxed. More about that at survival.rocks/guides/tax-system.*
 
 #### Picture: How to create a chest shop?
 
@@ -20,4 +20,3 @@ If you want to buy items from players, you have to prefix the number on line 3 w
 - Use the command `/company <name> item-frames <placement>`, and use one of the placement arguments from the picture below.
 
 ![item frame placement chest shops](https://user-images.githubusercontent.com/8517465/157319368-5099a694-6fc4-4bc5-b062-a76cafc2d0bd.png)
-
