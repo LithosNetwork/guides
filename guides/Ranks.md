@@ -12,7 +12,7 @@
 - warp sign creation
   
 #### Homes  
-Wants to save a home? Rank up to **Citizen**!   
+Want to save a home? Rank up to **Citizen**!   
 
 ### Creative Server 
 The **Settler** rank includes 1 creative plot   
@@ -71,7 +71,7 @@ The **Artisan** rank allows you to set a total of 7 homes
   - /meta 
   - /givepet  
   - /repair [or /fix]
-  - /sit    
+  - click to sit   
   
 ### Creative Server  
 The **Artisan** rank allows for a total of two (2) plots  
@@ -87,6 +87,7 @@ The **Magnate** rank allows you to set a total of 10 homes
 #### Available Commands and Permissions   
   - /anvil  
   - /enderchest
+  - /sit
 
 ## Loyalist
   
