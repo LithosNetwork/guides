@@ -1,4 +1,9 @@
 ## Settler
+"At this rank you have fund a good place to start off and you are connected to the community."
+
+**Requirements**:   
+- Existing rank of Traveler
+- Has used /ttpos command   
 
 ### Survival Server  
 #### Available Commands and Permissions 
@@ -33,6 +38,13 @@ The **Settler** rank includes 1 creative plot
  - /plots visit owned
 
  ## Citizen
+"At this rank we assume that you have established yourself, now focusing on your true intended path."
+
+**Requirements**:   
+- Existing rank of Settler
+- Has set three (3) homes
+- Has played a minumum of twelve (12) hours on **Survival Rocks**
+
 The **Citizen** rank includes all the perks of the **Settler** rank, **plus the following**:    
 
 ### Survival Server
@@ -58,6 +70,13 @@ The **Citizen** rank allows you to set a total 5 (five) homes.
 
 
 ##  Artisan
+"We assume that you have found a way to make coins, and that you are experienced with features in the server."  
+
+**Requirements**:   
+- Existing rank of Citizen
+- Cost of rank: 5,000₵
+- Has played a minimum of forty-eight (48) hours on **Survival Rocks**  
+
 The **Artisan** rank includes all the perks of the **Citizen** rank, **plus the following**:
 
 ### Survival Server  
@@ -77,6 +96,13 @@ The **Artisan** rank allows you to set a total of 7 homes
 The **Artisan** rank allows for a total of two (2) plots  
 
 ## Magnate  
+"You have been influential at this noble rank, swaying others with your wealth and experience."
+
+**Requirements**:   
+- Existing rank of Artesan
+- Cost of rank: 15,000₵
+- Has created a **Company**  
+
 The **Magnate** rank includes all the perks of the **Artisan** rank, **plus the following**  
 
 ### Survival Server  
@@ -90,6 +116,11 @@ The **Magnate** rank allows you to set a total of 10 homes
   - /sit
 
 ## Loyalist
+"You're an essential part of the fabric that makes up our community. Your dedication and advice holds vital significance."
+
+**Requirements**:   
+- Existing rank of Magnate
+- Has played a minimum of fourteen (13) days on **Survival Rocks** 
   
 ### Survival Server 
 
