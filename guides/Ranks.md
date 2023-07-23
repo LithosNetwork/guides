@@ -1,5 +1,5 @@
 ## Settler
-"At this rank you have fund a good place to start off and you are connected to the community."
+"At this rank you have found a good place to start off and you are connected to the community."
 
 **Requirements**:   
 - Existing rank of Traveler
@@ -43,7 +43,7 @@ The **Settler** rank includes 1 creative plot
 **Requirements**:   
 - Existing rank of Settler
 - Has set three (3) homes
-- Has played a minumum of twelve (12) hours on **Survival Rocks**
+- Has played a minimum of twelve (12) hours on **Survival Rocks**
 
 The **Citizen** rank includes all the perks of the **Settler** rank, **plus the following**:    
 
@@ -99,7 +99,7 @@ The **Artisan** rank allows for a total of two (2) plots
 "You have been influential at this noble rank, swaying others with your wealth and experience."
 
 **Requirements**:   
-- Existing rank of Artesan
+- Existing rank of Artisan
 - Cost of rank: 15,000₵
 - Has created a **Company**  
 
