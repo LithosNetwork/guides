@@ -120,7 +120,7 @@ The **Magnate** rank allows you to set a total of 10 homes
 
 **Requirements**:   
 - Existing rank of Magnate
-- Has played a minimum of fourteen (13) days on **Survival Rocks** 
+- Has played a minimum of fourteen (14) days on **Survival Rocks** 
   
 ### Survival Server 
 
