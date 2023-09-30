@@ -1,5 +1,5 @@
 # How to create a chest shop to sell items?
-
+Make sure you are a Settler! If you are a Traveler, you need to rank up first. Use /rankup.
 1. First, you have to (partially) own a company. To create a company, use `/create company`, and click the link. Read through the contract and attach a fictional signature on the page.
 2. Place down a chest or barrel and put the item you want to sell into that container.
 3. Place a sign around it (above, attached to, next to, or below the container), with this on the sign:
