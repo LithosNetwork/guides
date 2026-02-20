@@ -44,7 +44,7 @@ After this, we multiply the distinct tax identifiers of a company with the priva
 |**Total**|||22.25|
 
 This total amount is the 'real' amount of items the private shareholder is selling (**_r_**), and it will be used to calculate tax. The next step would then be to calculate the tax percentage. For this we use a formula: **_t_ = (25 × log(_r_ - 6.817) - 28)**. In this formula, **_r_** is the real calculated amount of items a private shareholder is selling. In the previous example **_r_** is 22.25. This results in **_t_**, the tax percentage for the private shareholder. The tax percentage cannot be negative, so any negative number is adjusted to 0. This is the case for the first 20 shop chests. See this image for a graph of the formula:
-![image](https://github.com/user-attachments/assets/3973e7fc-990a-415f-90ee-fe8469451fb5)
+![image](https://github.com/user-attachments/assets/0377b864-402c-43d7-aa8b-7798fdb9855b)
 
 Here is an overview of the tax percentage for a few points:
 
