@@ -64,9 +64,9 @@ Here is an overview of the tax percentage for a few points:
 |100|21.23%|
 
 ## Real examples
-- **You own only one company fully.** — No tax is levied when this company has 20 shop chests or less. The company count is 1.00, so the distinct amount of tax identifiers can directly be used as **_r_** in the formula.
+- **You fully own only one company.** — No tax is levied when this company has 20 shop chests or less. The company count is 1.00, so the distinct amount of tax identifiers can directly be used as **_r_** in the formula.
 - **You own only one company for 20%.** — Your company count is 0.20. This means you can have 100 distinct tax identifiers tax free, by dividing 20 by 0.20. Keep in mind that you only receive 20% of the profit from the company.
-- **You own two companies fully.** — No tax is levied when the total of both companies is 20 shop chests or less. The company count is 1.00 for both companies. The distinct amount of tax identifiers from both companies combined can directly be used as **_r_** in the formula.
+- **You fully own only two companies.** — No tax is levied when the total of both companies is 20 shop chests or less. The company count is 1.00 for both companies. The distinct amount of tax identifiers from both companies combined can directly be used as **_r_** in the formula.
 - **You own one company fully, and one company for 25%.** — See the example of the explanation.
 - **You own one company for 50%, and one for 25%.** — This is where it gets a little more difficult. When you look at the example of the explanation, and we replace the 100% percentage ownership for Company A with 50%, the 'real' amount of items will be 13.75, instead of 22.25 in the example. This 13.75 can be used as **_r_** in the formula.
 
