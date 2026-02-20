@@ -1,58 +1,79 @@
-# Tax system
-The server currently has these taxes:
-- Shop Income Tax
-- Dividend Tax
+# Tax System
+The economy of survival.rocks currently has the following tax systems.
+### Shop Income Tax
+In short: No tax is paid when 20 shop chests or less are owned. The guide for this tax explains what happens when you go over 20 shop chests.
+<!-- ### Dividend Tax -->
 
-### Definitions
-First some definitions, used in the guide:
-- **Private shareholder** (private ownership) — Simply put, a direct owner of a company. They can create chest shops for a company.
-- ***Tax ID*** — Every item in the server has a *Tax ID*, which can be found by either clicking an item on https://survival.rocks/items, or by using /meta on an item in your hand.
-    For 'Enchanted Book' with 'Fortune III', it is `enchanted-book-fortune`, and for 'Red Concrete', it is `concrete`, to name two examples. 
-- **Tax Count** (*`c`*) — Every *Tax ID* has a 'Tax Count' value of 1. This value can, however, be reduced in certain circumstances.
-   This value is to determine the tax percentage a player has to pay for Shop Income Tax.
+## Definitions
+Here are some definitions for terms used in the guides.
+- **Private shareholder** — Simply put, an owner of a company, or private ownership. Private shareholders can create shop chests for the company.
+- **Tax identifier** — An identifier for in-game items, used for taxing. Every (category of) items has a different tax identifier, which can be found by using _/meta_ on an item in your hand. Example: For 'Enchanted Book' with 'Fortune III', it is `enchanted-book-fortune`, and for 'Red Concrete', it is `concrete`. 
+- **Company count** — The percentage of a company that a private shareholder owns, a value from 0.00 to 1.00. This value makes it possible to pay less tax when you don't fully own a company.
 
 ## Shop Income Tax
-Shop income tax was introduced in mid-2020 for the following reasons:
-- many (big) companies would sell any item (hundreds) in their shop, and fight the prices to the bottom with other (big) companies;
-- because of that, items were dirt cheap, and starting out companies couldn’t keep up with the prices of big companies.
+**Shop Income Tax** was introduced in mid-2020 for the following reasons:
+- Many companies sold almost all possible items in their shop, fighting prices to rock-bottom with other companies.
+- Items were dirt cheap for this reason; starting companies couldn’t compete with the prices of bigger companies.
 
-This tax forces companies—or actually their private shareholders—to specialize into a specific group of items to sell. 
-And if that does not happen, they pay (higher) tax, which results in higher prices for the company to sell their items at.
+This tax forces companies—or their private shareholders—to specialize into a specific group of items to sell. They pay higher tax if they sell a broader amount of items. This results in higher prices for bigger companies to sell their items at.
 
 The tax percentage is determined by:
-- the amount of taxable items (by *Tax ID*) you are selling through the companies you are a private shareholder of;
-- the percentage of private ownership you have in the company you sell the items at.
+- The amount of distinct tax identifiers that are sold, through the companies one is a private shareholder of.
+- The percentage of private ownership one has in a company selling items.
 
-Every different *Tax ID* of items you are selling through companies adds to your 'Tax Count'. However, if you do not own 100% of a company, the value is reduced.
-Your 'Tax Count' is the sum of the different Tax IDs you sell an item for, multiplied (or really reduced) by the ownership of the company you sell them at.
-Sorry for the confusion, but it is easier than you think, just hard to explain. Here is an example:
+We have to calculate the total 'amount' of shop chests a private shareholder owns, shared between companies. This is done by counting distinct tax identifiers a company holds. Example: When a company sells Red Concrete, Blue Concrete, and Bow (3 items), the number is 2, because Red Concrete and Blue Concrete share the same tax identifier (`concrete`). Here is an example with two companies:
 
-|Company|Ownership|*Tax ID*|Tax Count|
+|Company|Items selling|Distinct tax identifiers|
+|-|-|-|
+|Company A|17|17|
+|Company B|28|21|
+
+Next, we have to calculate the company count: How much the tax identifiers weigh for private shareholders. This value is different for every company you are a private shareholder of. It is always 1.00 when you own the entire company. Here is an example with two companies:
+
+|Company|Percentage ownership|Company count|
+|-|-|-|
+|Company A|100%|1.00|
+|Company B|25%|0.25|
+
+After this, we multiply the distinct tax identifiers of a company with the private shareholder's company count. Here is an example for one private shareholder with two companies:
+
+|Company|Distinct tax identifiers|Company count|Multiplied|
 |-|-|-|-|
-|**Company A**|100%|netherite-ingot|1.00|
-|||gold-ingot|1.00|
-|||diamond|1.00|
-|**Company B**|20%|elytra|0.20|
-|||concrete|0.20|
-|||saddle|0.20|
-|**TOTAL**|||**3.60**|
+|Company A|17|1.00|17.00|
+|Company B|21|0.25|5.25|
+|**Total**|||22.25|
 
-The next part is calculating the tax percentage with the given Tax Count. 
-A formula is used for this: *`t = (25 * log(c - 6.817) - 28)`*, where *`t`* is the tax percentage and *`c`* is the Tax Count.
-When *`t`* is negative, the tax percentage is 0%. This is the case for a Tax Count less than or equal to 20.
+This total amount is the 'real' amount of items the private shareholder is selling (**_r_**), and it will be used to calculate tax. The next step would then be to calculate the tax percentage. For this we use a formula: **_t_ = (25 × log(_r_ - 6.817) - 28)**. In this formula, **_r_** is the real calculated amount of items a private shareholder is selling. In the previous example **_r_** is 22.25. This results in **_t_**, the tax percentage for the private shareholder. The tax percentage cannot be negative, so any negative number is adjusted to 0. This is the case for the first 20 shop chests. See this image for a graph of the formula:
+![image](https://github.com/user-attachments/assets/3973e7fc-990a-415f-90ee-fe8469451fb5)
 
-![image](https://user-images.githubusercontent.com/8517465/158900610-40d63e06-9982-4187-89ab-f0016546c40c.png)
+Here is an overview of the tax percentage for a few points:
 
-### Some real-game examples
-- If you only and fully own one company:
-  - with less than or equal to 20 chest shops, you pay 0% tax.
-  - with more than 20 chest shops, you pay tax on income from the chest shop sales.
-- If you only own one company, and you own 20% of the company, you can have 100 chest shops tax-free.
-  - Keep in mind that you only receive 20% of the profit from the company.
-  - The 100 is calculated by { 1 / 0.20 (percentage ownership) * 20 (tax-free threshold) }.
+|Calculated items selling (**_r_**)|Tax percentage|
+|-|-|
+|0|0.00%|
+|20|0.00%|
+|20.5|0.40%|
+|21|0.79%|
+|22|1.53%|
+|23|2.23%|
+|24|2.88%|
+|25|3.49%|
+|30|6.13%|
+|40|10.02%|
+|50|12.88%|
+|100|21.23%|
 
+## Real examples
+- **You own only one company fully.** — No tax is levied when this company has 20 shop chests or less. The company count is 1.00, so the distinct amount of tax identifiers can directly be used as **_r_** in the formula.
+- **You own only one company for 20%.** — Your company count is 0.20. This means you can have 100 distinct tax identifiers tax free, by dividing 20 by 0.20. Keep in mind that you only receive 20% of the profit from the company.
+- **You own two companies fully.** — No tax is levied when the total of both companies is 20 shop chests or less. The company count is 1.00 for both companies. The distinct amount of tax identifiers from both companies combined can directly be used as **_r_** in the formula.
+- **You own one company fully, and one company for 25%.** — See the example of the explanation.
+- **You own one company for 50%, and one for 25%.** — This is where it gets a little more difficult. When you look at the example of the explanation, and we replace the 100% percentage ownership for Company A with 50%, the 'real' amount of items will be 13.75, instead of 22.25 in the example. This 13.75 can be used as **_r_** in the formula.
+
+<!--
 ## Dividend Tax (Work in Progress)
 This tax is specific to the *public* shares you own of a company you are also a *private* shareholder of. 
 The tax percentage for a specific share is the percentage of private ownership in that company.
 
 Example: if you are a private shareholder of company A for 90%, your dividend tax for your public shares in company A is 90%.
+-->
