@@ -1,4 +1,4 @@
-# Tax System
+# Understanding the tax system for companies
 The economy of survival.rocks currently has the following tax systems.
 ### Shop Income Tax
 In short: No tax is paid when 20 shop chests or less are owned. The guide for this tax explains what happens when you go over 20 shop chests.

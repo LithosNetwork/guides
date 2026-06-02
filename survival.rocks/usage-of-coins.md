@@ -1,4 +1,4 @@
-# Ways to get coins
+# Ways to get and use coins
 ## Getting coins
 - Nitro-boost the Discord server to receive 100¢ per boosted day (3,000¢ per month).
 - Log into the server daily for a reward of 200¢, or 100¢ for the first day.
