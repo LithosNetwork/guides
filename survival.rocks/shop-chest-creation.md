@@ -1,6 +1,6 @@
 # Creating shop chests to sell items
 ## How to create a shop chest to sell items?
-Make sure you are a Settler! If you are a Traveler, you need to rank up first. Use /rankup.
+Make sure you are at least level 50 in the server. View your current level with /levels.
 1. First, you have to (partially) own a company. To create a company, use `/create company`, and click the link. Read through the contract and attach a fictional signature on the page.
 2. Place down a chest or barrel and put the item you want to sell into that container.
 3. Place a sign around it (above, attached to, next to, or below the container), with this on the sign:
@@ -13,11 +13,11 @@ If you want to buy items from players, you have to prefix the number on line 3 w
 
 *Note that if you own more than 20 shop chests, your sales will be taxed. More about that at survival.rocks/guides/tax-system.*
 
-#### Picture: How to create a shop chest?
+#### Picture: Creating a shop chest
 
 ![image](https://user-images.githubusercontent.com/8517465/157056052-bca19472-1e41-4dc2-8324-9033e5cff9f4.png)
 
-#### Picture: How to change item frame placement?
-- Use the command `/company <name> item-frames <placement>`, and use one of the placement arguments from the picture below.
+#### Picture: Changing the item frame position
+Use the command `/company <name> item-frames <placement>`, and use one of the placement arguments from the picture below.
 
 ![item frame placement shop chests](https://user-images.githubusercontent.com/8517465/157319368-5099a694-6fc4-4bc5-b062-a76cafc2d0bd.png)
