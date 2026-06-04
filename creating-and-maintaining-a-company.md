@@ -6,12 +6,12 @@ In order to create your very own shops in survival.rocks, first you will need to
 
 # Shares
 
-You can give 10,080 private shares to anyone. Private shareholders can access company chest shops and will recive profit from chest shop sales. PLEASE NOTE: Once transferred, private shares cannot be taken back.
-To give company shares you must use `/company <company_name> give_ownership <player> <shares>`. The player you are transferring shares to must be online. 
+You can give 10,080 private shares to anyone. Private shareholders can access company chest shops and will receive profit from chest shop sales. PLEASE NOTE: Once transferred, private shares cannot be taken back.
+To give company shares, you must use `/company <company_name> give_ownership <player> <shares>`. The player you are transferring shares to must be online. 
 
 # Cash Register
 
-When profit is made, it goes into the company balance which can be viewed with `/company <company_name> balance`. You can adjust what percentage of the income will stay in the company balance with `/company <company_name> savings-rate <rate>` You can deposit and withdraw coins from the register with the following commands:
+When profit is made, it goes into the company balance, which can be viewed with `/company <company_name> balance`. You can adjust what percentage of the income will stay in the company balance with `/company <company_name> savings-rate <rate>` You can deposit and withdraw coins from the register with the following commands:
 
 - `/company <company_name> deposit <amount>`
 - `/company <company_name> withdraw <amount>`
@@ -21,9 +21,9 @@ You can also view previous transactions with `/company <company_name> transactio
 # Customization 
 
 There are a couple ways you can customize your company! 
-## Colour
+## Color
 
-You can change your company color using `/company <company_name> set-color <hex_code>`. To get a hex code for the color you want, search in your browser for a color picker. A hex code is a 6-digit combination that will be provided with the color you choose. See image guide below
+You can change your company color using `/company <company_name> set-color <hex_code>`. To get a hex code for the color you want, search in your browser for a color picker. A hex code is a 6-digit combination that will be provided with the color you choose. See image guide below.
 
 <img width="659" height="447" alt="Hex" src="https://github.com/user-attachments/assets/7222559d-ef08-4796-a2de-0ee322917b12" />
 
