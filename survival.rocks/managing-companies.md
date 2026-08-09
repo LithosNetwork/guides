@@ -1,21 +1,29 @@
 # Creating and managing a company
 
-In order to create your very own shops in survival.rocks, first you will need to create a company with `/create company`, click on the link provided in chat to choose a name and color for your company, and then sign with a fictional signature. Creating a company costs 500 coins.
+In order to create your own shops in survival.rocks, you will need to own or create a company:
 
-<img width="650" height="72" alt="CompanyCreation" src="https://github.com/user-attachments/assets/c6a0d01d-682c-4a9f-b713-2e6a624009f1" />
+- Create a company with `/create company` (run it in-game).
+- Go to the link provided in chat.
+- Choose a name and color for your company.
+- And then sign the "contract" with a fictional signature.
 
-## Shares
+Creating a company costs 500 coins.
 
-You can give 10,080 private shares to anyone. Private shareholders can access company chest shops and will receive profit from chest shop sales. PLEASE NOTE: Once transferred, private shares cannot be taken back. To give company shares, you must use `/company <company_name> give-ownership <player> <shares>`. The player you are transferring shares to must be online. 
+## Private shares
 
-## Cash Register
+Every company has so-called "private shares" that determine who own(s) the company. The creator of the company owns all 10,080 private shares in the beginning. You can give these private shares to anyone. Private shareholders own every aspect of the company: from accessing chest shops, to receiving profit from sales. Please note that shares that are transferred to another player cannot be taken back. To give company shares, you must use `/company <company_name> give-ownership <player> <amount>`.
 
-When profit is made, it goes into the company balance, which can be viewed with `/company <company_name> balance`. You can adjust what percentage of the income will stay in the company balance with `/company <company_name> savings-rate <rate>` You can deposit and withdraw coins from the register with the following commands:
+Fun fact: The company starts out with an odd number of private shares (ten thousand and _eighty_), because that number is dividable by 1, 2, 3, 4, 5, 6, 7, 8, and 9. That way it is easy to give shareholders the same amount of shares. If you want the company to be equally owned by 3 players, each player could have 3,360 shares.
+
+## Cash register
+Coins from a sale or transaction are always queued to be paid out. This payout is done once every hour. So don't worry if you haven't received the coins from a sale within a few minutes!
+
+It is possible to make these coins go into the balance of the company. The balance can be viewed with `/company <company_name> balance`. You can adjust what percentage of sale income will stay in the company balance with `/company <company_name> savings-rate <rate>` You can deposit and withdraw coins from the register with the following commands:
 
 - `/company <company_name> deposit <amount>`
 - `/company <company_name> withdraw <amount>`
 
-You can also view previous transactions with `/company <company_name> transactions`.
+Coins from either sales or a withdraw that are being paid out will always be equally spread across all private shareholders. If you own 50% of the shares of a company, you will receive 50% of the payout. You can also view sale transactions with `/company <company_name> transactions`.
 
 ## Customization
 
@@ -23,28 +31,37 @@ There are a couple ways you can customize your company!
 
 ### Color
 
-You can change your company color using `/company <company_name> set-color <hex_code>`. To get a hex code for the color you want, search in your browser for a color picker. A hex code is a 6-digit combination that will be provided with the color you choose. See image guide below.
+You can change your company color using `/company <company_name> set-color <hex_code>`. To get a hex code for the color you want, search in your browser for a color picker. A hex code is a 6-digit combination that will be provided with the color you choose.
 
-<img width="659" height="447" alt="Hex" src="https://github.com/user-attachments/assets/7222559d-ef08-4796-a2de-0ee322917b12" />
-
-Once you have your code, you can copy it into the command like below, and your company name will show up in your chosen color.
-
-<img width="472" height="53" alt="ColourCommand" src="https://github.com/user-attachments/assets/f4595c2c-370c-438d-b496-09e554fe24af" />
-
-<img width="556" height="39" alt="ColourExample" src="https://github.com/user-attachments/assets/82937649-e497-4013-8f7b-28f2244610b9" />
+Once you have your hex color code, you can copy it into the command `/company <company_name> set-color #123456` (replace #123456 with your color code), and your company name will show up in your chosen color on shop signs and on the website.
 
 ### Logo
 
-The next way you can customize is to make a logo. You can do this by creating a banner in game, holding it in your hand, and using `/company <company_name> set-logo`. The banner will then be displayed on the survival.rocks website next to your company. 
+It is recommended to set a logo for your company. You can do this by either creating a banner in-game or creating map art. Then hold the banner or map art in your hand, and use `/company <company_name> set-logo`. The logo (banner or map art) will then be displayed on the website next to your company name.
 
-<img width="1131" height="189" alt="BannerIn" src="https://github.com/user-attachments/assets/a0e8d295-b56e-40f0-baf1-e8e4f4c2557e" />
-<img width="168" height="74" alt="BannerWeb" src="https://github.com/user-attachments/assets/52c4079b-32a5-4bb9-bd22-46b6ea56e80f" />
-
-You can view your logo, along with other company details directly with `/company <company_name> website-url`
+You can view your logo, along with other company details directly with `/company <company_name> website-url`.
 
 ## Employees
 
-You can hire other players to help run your shops, or do tasks for you, and pay them a daily wage. You will need to make sure there is enough coins in your company balance to pay them. Use the following comands to hire or fire an employee
+You can hire other players to help run your shops or do tasks for you, and pay them a daily wage for that. Employees only really have access to open shop chests; they don't have access to any settings. However, they will be added to the company Discord thread. You will need to make sure there is enough coins in your company balance to pay them. Use the following comands to hire or fire an employee:
 
 - `/company <company_name> hire <player> <wage>`
 - `/company <company_name> fire <player>`
+- And then to make sure you have enough coins to pay them: `/company <company_name> deposit <amount>`
+
+Payout of coins stops when there is not enough coins in the company balance anymore. A good way to keep coins in the balance, is to set the savings rate of the company, so that coins from sales go directly into the company balance.
+
+## Company thread
+
+Every company gets its own private thread on Discord. Anyone involved in the company will be added to this thread: the private shareholders and employees. This thread is a way to communicate with everyone involved, and you will also receive the following messages about the company in the thread:
+- When a shop chest goes out of stock
+- Weekly profits made by the company
+- Changes in private shareholders or employees
+- When a deposit or withdraw took place
+
+## Website pages
+
+More about companies can be found in 3 places through the website:
+- All companies that exist, you can click the name to go to the company's page: https://survival.rocks/companies
+- View public information about your company: `/company <company_name> website-url`
+- View some more detailed info and statistics about your company, you need to /login for this: `/company <company_name> website-details`
