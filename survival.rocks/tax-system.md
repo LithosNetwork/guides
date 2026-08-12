@@ -21,11 +21,13 @@ The tax percentage is determined by:
 - The amount of distinct tax identifiers that are sold, through the companies one is a private shareholder of.
 - The percentage of private ownership one has in a company selling items.
 
-We have to calculate the total 'amount' of shop chests a private shareholder owns, shared between companies. This is done by counting distinct tax identifiers a company holds. Example: When a company sells Red Concrete, Blue Concrete, and Bow (3 items), the number is 2, because Red Concrete and Blue Concrete share the same tax identifier (`concrete`). Here is an example with two companies:
+We have to calculate the total 'amount' of different items that a private shareholder sells. This is done by counting distinct tax identifiers a company holds. Example: When a company sells Red Concrete, Blue Concrete, and Bow (3 items), the number is 2, because Red Concrete and Blue Concrete share the same tax identifier (`concrete`). Please note: Shop chests that *buy* items (not sell), and items that are sold for free are not counted towards the tax identifier count, so free items and buying shops cannot increase the tax percentage.
+
+Here is an example with two companies:
 
 |Company|Items selling|Distinct tax identifiers|
 |-|-|-|
-|Company A|17|17|
+|Company A|17|16|
 |Company B|28|21|
 
 Next, we have to calculate the company count: How much the tax identifiers weigh for private shareholders. This value is different for every company you are a private shareholder of. It is always 1.00 when you own the entire company. Here is an example with two companies:
