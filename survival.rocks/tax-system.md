@@ -27,7 +27,7 @@ Here is an example with two companies:
 
 |Company|Items selling|Distinct tax identifiers|
 |-|-|-|
-|Company A|17|16|
+|Company A|18|17|
 |Company B|28|21|
 
 Next, we have to calculate the company count: How much the tax identifiers weigh for private shareholders. This value is different for every company you are a private shareholder of. It is always 1.00 when you own the entire company. Here is an example with two companies:
