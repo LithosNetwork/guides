@@ -23,6 +23,7 @@ Other ways to get coins in the server are:
 ## Trading and transferring coins
 - Sell items through shop chests: [See this guide.](https://survival.rocks/guides/chest-shop-creation)
   - Set a warp to your shop chests so players can access it.
+- Sell subdivided claims as plots: [See this guide.](https://survival.rocks/guides/selling-plots)
 - Sell items through the auction house: `/ah sell <price>`.
 - Set a warp **with a fee**, and you will receive the fee that players pay when they go there.
 - Receive coins through /pay from another player.
@@ -39,3 +40,4 @@ Other ways to get coins in the server are:
 - Teleport to your last death location for 100¢ with `/death`.
 - Receive a golden shovel and stick for claiming with `/kit claim` for 5¢.
 - Create a company for 500¢.
+- Create a territory for 1,000¢.
