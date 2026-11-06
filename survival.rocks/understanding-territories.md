@@ -26,7 +26,7 @@ A territory can be set up in two ways:
 - **Public:** Everyone can join.
 - **Invite only:** You need an invite from an archon or vizier of the territory before you can join.
 
-A territory can also have a join cost, or be free to join. Check the territory first, so you know what you pay. You can do this with `/territory info <name>`.
+To join a territory, you can either get invited, or join a public territory with `/territory join <name>`. You can be a resident of 3 territories at most! A territory can also have a join cost, or be free to join. Check the territory first, so you know what you pay. You can do this with `/territory info <name>`.
 
 ### Becoming a resident by buying a plot
 
@@ -34,7 +34,7 @@ You automatically become a resident of a territory when you buy a plot inside it
 
 1. The chunk is claimed by the territory.
 2. The join cost of the territory is 0.
-3. The buyer is not already a resident.
+3. The buyer is not already resident for 3 territories: Players can be resident of 3 territories at most. The sale is canceled if the player is already resident of 3 territories, if the claim is inside a territory.
 4. One of the private shareholders of the selling company has invite permissions.
 
 Archons can change this with `/archon settings plot-sale-become-resident`.
