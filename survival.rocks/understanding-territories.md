@@ -34,8 +34,8 @@ You automatically become a resident of a territory when you buy a plot inside it
 
 1. The chunk is claimed by the territory.
 2. The join cost of the territory is 0.
-3. The buyer is not already resident for 3 territories: Players can be resident of 3 territories at most. The sale is canceled if the player is already resident of 3 territories, if the claim is inside a territory.
-4. One of the private shareholders of the selling company has invite permissions.
+3. The buyer is not already resident of 3 territories: Players can be resident of 3 territories at most. The sale is canceled if the player is already resident of 3 territories, if the claim is inside a territory.
+4. One of the private shareholders of the selling company has territory invite permissions.
 
 Archons can change this with `/archon settings plot-sale-become-resident`.
 
